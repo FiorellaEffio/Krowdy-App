@@ -1,10 +1,110 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { DatePicker, message } from "antd";
+import { Popover, Button } from 'antd';
+import { Modal, Steps } from 'antd';
+
+import "antd/dist/antd.css";
+import "./index.css";
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class App extends React.Component {
+  state = {
+    date: null,
+    visible: true
+  };
+
+  showModal = () => {
+    this.setState({
+      visible: true,
+    });
+  }
+
+  handleOk = (e) => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  }
+
+  handleCancel = (e) => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  }
+
+  handleChange = date => {
+    message.info(`Selected Date: ${date ? date.format("YYYY-MM-DD") : "None"}`);
+    this.setState({ date });
+  };
+
+  render() {
+    const { date } = this.state;
+    const Step = Steps.Step;
+
+    const content = (
+    <div>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+    );
+    
+    return (
+      <div style={{ width: 400, margin: "100px auto" }}>
+        <DatePicker onChange={this.handleChange} />
+        <div style={{ marginTop: 20 }}>
+          Selected Date: {date ? date.format("YYYY-MM-DD") : "None"}
+        </div>
+        <Popover content={content} title="Title">
+          <Button type="primary">Hover me</Button>
+        </Popover>,
+        mountNode
+        <div>
+            <Button type="primary" onClick={this.showModal}>
+                Open Modal
+            </Button>
+        <Modal
+          title="Basic Modal"
+          visible={this.state.visible}
+          onOk={this.handleOk}
+          onCancel={this.handleCancel}
+        >
+          <video controls="controls"></video>
+          
+          <Steps progressDot current={1}>
+            <Step title="Finished" description="This is a description." />
+            <Step title="In Progress" description="This is a description." />
+            <Step title="Waiting" description="This is a description." />
+          </Steps>,
+        </Modal>
+        
+      </div>
+      </div>
+      
+    );
+  }
+  showVideo() {
+    let p = navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+
+    p.then(function(mediaStream) {
+      let video = document.querySelector('video');
+      video.srcObject=mediaStream;
+      video.onloadedmetadata = function(e) {
+         video.play();
+      };
+    });
+
+
+    p.catch(function(err) { console.log(err.name); });
+  }
+  
+  componentDidMount() {
+    this.showVideo();
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
