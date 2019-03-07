@@ -1,14 +1,15 @@
 {
-  "main.css": "/Krowdy-App/static/css/main.677c97e9.chunk.css",
-  "main.js": "/Krowdy-App/static/js/main.5078043f.chunk.js",
-  "main.js.map": "/Krowdy-App/static/js/main.5078043f.chunk.js.map",
+  "main.css": "/Krowdy-App/static/css/main.8789c9be.chunk.css",
+  "main.js": "/Krowdy-App/static/js/main.2a9489df.chunk.js",
+  "main.js.map": "/Krowdy-App/static/js/main.2a9489df.chunk.js.map",
   "runtime~main.js": "/Krowdy-App/static/js/runtime~main.0d63b268.js",
   "runtime~main.js.map": "/Krowdy-App/static/js/runtime~main.0d63b268.js.map",
-  "static/js/2.a539ea9d.chunk.js": "/Krowdy-App/static/js/2.a539ea9d.chunk.js",
-  "static/js/2.a539ea9d.chunk.js.map": "/Krowdy-App/static/js/2.a539ea9d.chunk.js.map",
+  "static/css/2.637b7994.chunk.css": "/Krowdy-App/static/css/2.637b7994.chunk.css",
+  "static/js/2.79b59658.chunk.js": "/Krowdy-App/static/js/2.79b59658.chunk.js",
+  "static/js/2.79b59658.chunk.js.map": "/Krowdy-App/static/js/2.79b59658.chunk.js.map",
   "index.html": "/Krowdy-App/index.html",
-  "precache-manifest.cdfefd7c9f9641e4275ff0b6557d2901.js": "/Krowdy-App/precache-manifest.cdfefd7c9f9641e4275ff0b6557d2901.js",
+  "precache-manifest.c815d2ec0c0457d000e56220f66d096f.js": "/Krowdy-App/precache-manifest.c815d2ec0c0457d000e56220f66d096f.js",
   "service-worker.js": "/Krowdy-App/service-worker.js",
-  "static/css/main.677c97e9.chunk.css.map": "/Krowdy-App/static/css/main.677c97e9.chunk.css.map",
-  "static/media/logo.svg": "/Krowdy-App/static/media/logo.5d5d9eef.svg"
+  "static/css/2.637b7994.chunk.css.map": "/Krowdy-App/static/css/2.637b7994.chunk.css.map",
+  "static/css/main.8789c9be.chunk.css.map": "/Krowdy-App/static/css/main.8789c9be.chunk.css.map"
 }

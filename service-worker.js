@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Krowdy-App/precache-manifest.cdfefd7c9f9641e4275ff0b6557d2901.js"
+  "/Krowdy-App/precache-manifest.c815d2ec0c0457d000e56220f66d096f.js"
 );
 
 workbox.clientsClaim();
