@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { DatePicker, message } from "antd";
 import { Popover, Button } from 'antd';
 import { Modal, Steps } from 'antd';
+import { Row, Col } from 'antd';
 
 import "antd/dist/antd.css";
 import "./index.css";
@@ -11,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 class App extends React.Component {
   state = {
     date: null,
-    visible: true
+    visible: false
   };
 
   showModal = () => {
@@ -51,6 +52,16 @@ class App extends React.Component {
     );
     
     return (
+      <div>
+        <div>
+            <Row>
+            <Col span={24}>col-24</Col>
+            </Row>
+            <Row>
+            <Col span={1}>col-1</Col>
+            <Col span={23}>col-23</Col>
+            </Row>
+        </div>
       <div style={{ width: 400, margin: "100px auto" }}>
         <DatePicker onChange={this.handleChange} />
         <div style={{ marginTop: 20 }}>
@@ -79,6 +90,7 @@ class App extends React.Component {
           </Steps>,
         </Modal>
         
+      </div>
       </div>
       </div>
       
