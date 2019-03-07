@@ -19,3 +19,7 @@ video {
 div {
   text-align:center;
 }
+#gradient-div {
+  min-height: 700px;
+	background: linear-gradient(to bottom, #002D65 50%, #F6F6F6 50%);
+}

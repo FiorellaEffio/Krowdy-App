@@ -55,11 +55,16 @@ class App extends React.Component {
       <div>
         <div>
             <Row>
-            <Col span={24}>col-24</Col>
+                <Col span={24}>col-24</Col>
             </Row>
             <Row>
-            <Col span={1}>col-1</Col>
-            <Col span={23}>col-23</Col>
+                <Col span={1}>col-1</Col>
+                <Col span={23}>
+                    <Row>
+                        <Col span={24}>col-24</Col>
+                        <Col id="gradient-div" span={24}>col-24</Col>
+                    </Row>
+                </Col>
             </Row>
         </div>
       <div style={{ width: 400, margin: "100px auto" }}>
